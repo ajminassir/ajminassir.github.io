@@ -5,96 +5,76 @@
   box-sizing: border-box;
 }
 
+/* Set background image */
 body {
-  font-family: Arial, sans-serif;
-
-  /* Set the background image */
-  background-image: url('../images/photo1.jpg.jpg'); /* Replace with her photo */
+  background-image: url('../images/photo1.jpg'); /* Set her image here */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
-  /* Add a light dark overlay to make content visible */
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
 }
 
-/* Main Container */
-.main-container {
+/* Main container */
+.container {
   text-align: center;
-  margin: 50px auto;
-  max-width: 600px;
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
 }
 
-/* Style the heading */
-.main-container h1 {
+/* Title & Message */
+h1 {
   font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
   margin-bottom: 20px;
 }
 
-/* Password Section Styling */
-.password-section {
-  margin: 20px 0;
+/* Input & Button Styling */
+.login-section {
+  margin: 10px 0;
 }
 
-.password-section input {
-  padding: 10px;
-  font-size: 1rem;
+.login-section input {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
   width: 80%;
-  max-width: 400px;
   margin-bottom: 10px;
-  border: 1px solid #007bff;
-  border-radius: 8px;
 }
 
-.password-section button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  border-radius: 8px;
+.login-section button {
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
-.password-section button:hover {
-  background-color: #0056b3;
+.login-section button:hover {
+  background: #0056b3;
 }
 
 /* Countdown Timer */
 .countdown-container {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
-.countdown {
-  font-size: 1.3rem;
-  color: #fff;
+#timer {
+  font-size: 1.2rem;
+  color: #007bff;
   font-weight: bold;
-  margin: 10px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .main-container h1 {
-    font-size: 2rem;
-  }
-
-  .password-section input,
-  .password-section button {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-container h1 {
-    font-size: 1.5rem;
-  }
-
-  .countdown {
-    font-size: 1rem;
-  }
 }

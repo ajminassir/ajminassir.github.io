@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const timerElement = document.getElementById("timer");
 
   // Set the target date (Birthday Date)
-  const targetDate = new Date("2024-12-20T00:00:00").getTime();
+  const targetDate = new Date("2024-12-13T00:00:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Validate password logic
 function checkPassword() {
-  const correctPassword = "12345"; // Change this to a password of your choice
+  const correctPassword = "APT"; // Change this to a password of your choice
   const userPassword = document.getElementById("password").value;
 
   if (userPassword === correctPassword) {

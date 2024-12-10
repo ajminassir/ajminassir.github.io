@@ -21,7 +21,7 @@ function loadImages() {
 
   for (let i = 1; i <= 16; i++) {
     const img = document.createElement('img');
-    img.src = `images/memory.jpg${i}.jpg`;
+    img.src = `images/memory${i}.jpg.jpg`;
     img.alt = `Memory ${i}`;
     img.classList.add('memory-img');
     imageGallery.appendChild(img);

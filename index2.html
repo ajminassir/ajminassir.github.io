@@ -7,31 +7,23 @@
   <link rel="stylesheet" href="css/style2.css" />
 </head>
 <body>
-  <!-- Slideshow Container -->
-  <div class="slideshow-container">
-    <div class="slides">
-      <img src="images/memory1.jpg.jpg" />
-        <img src="images/memory2.jpg.jpg" />
-        <img src="images/memory3.jpg.jpg" />
-        <img src="images/memory4.jpg.jpg" />
-        <img src="images/memory4.jpg (2).jpg" />
-        <img src="images/memory6.jpg.jpg" />
-        <img src="images/memory7.jpg.jpg" />
-        <img src="images/memory8.jpg.jpg" />
-        <img src="images/memory9.jpg.jpg" />
-        <img src="images/memory10.jpg.jpg" />
-        <img src="images/memory11.jpg.jpg" />
-        <img src="images/memory12.jpg.jpg" />
-        <img src="images/memory13.jpg.jpg" />
-        <img src="images/memory14.jpg.jpg" />
-        <img src="images/memory15.jpg.jpg" />
+  <div class="content-container">
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+      <img id="slideshow" src="images/photo1.jpg" />
     </div>
-  </div>
 
-  <!-- Background music -->
-  <audio autoplay loop>
-    <source src="music/birthday-song.mp3" type="audio/mp3" />
-  </audio>
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+      <button onclick="prevImage()">Previous</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+
+    <!-- Background music -->
+    <audio autoplay loop>
+      <source src="music/birthday-song.mp3" type="audio/mp3" />
+    </audio>
+  </div>
 
   <script src="js/script2.js"></script>
 </body>

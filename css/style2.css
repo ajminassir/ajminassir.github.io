@@ -36,6 +36,23 @@ body {
   }
 }
 
+/* Birthday text at the top */
+.birthday-text {
+  text-align: center;
+  margin: 20px 10px;
+  color: #333;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.birthday-text h1 {
+  font-size: 2.5rem;
+}
+
+.birthday-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -51,26 +68,6 @@ body {
   height: 100%;
   object-fit: cover;
   transition: all 0.5s ease-in-out;
-}
-
-/* Overlay text */
-.text-overlay {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.text-overlay h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.text-overlay p {
-  font-size: 1.2rem;
 }
 
 /* Navigation buttons */
@@ -92,4 +89,41 @@ body {
 
 .navigation button:hover {
   background: #0056b3;
+}
+
+/* Responsive design for mobile and smaller devices */
+@media (max-width: 768px) {
+  .birthday-text h1 {
+    font-size: 2rem;
+  }
+
+  .birthday-text p {
+    font-size: 1rem;
+  }
+
+  .slideshow-container {
+    height: 50%;
+  }
+
+  .navigation button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .birthday-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .birthday-text p {
+    font-size: 0.9rem;
+  }
+
+  .slideshow-container {
+    height: 40%;
+  }
+
+  .navigation button {
+    padding: 6px 12px;
+  }
 }

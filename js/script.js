@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Validate password logic
 function checkPassword() {
-  const correctPassword = "APT"; // Change this to a password of your choice
+  const correctPassword = "amira"; // Change this to a password of your choice
   const userPassword = document.getElementById("password").value;
 
   if (userPassword === correctPassword) {

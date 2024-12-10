@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .gift-box {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            background: #f7d6e0;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: bounce 2s infinite;
+        }
+        .gift-box img {
+            width: 100px;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #ff6f61;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #ff3d3d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <p>Wishing you all the joy, love, and happiness in the world!</p>
+        <div class="gift-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048955.png" alt="Gift Box">
+        </div>
+        <button class="button" onclick="showMessage()">Open Your Gift</button>
+        <p id="message" style="display: none; font-size: 1.5rem; margin-top: 20px;">🎁 Surprise! You’re amazing, and this day is all about celebrating YOU! 🎈</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

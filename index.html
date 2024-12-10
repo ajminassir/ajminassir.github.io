@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Love!</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="music/birthday-song.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1>🎉 Happy Birthday, My Love! 🎂</h1>
+    <p>Here are some beautiful memories for you.</p>
+
+    <div class="login-container">
+      <h3>Access Your Surprise Zone ✨</h3>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter the secret password"
+      />
+      <button onclick="checkPassword()">Unlock Memories 💖</button>
+      <p id="error-message" class="error-message"></p>
+    </div>
+
+    <div id="memories-section" class="memories-section" style="display: none;">
+      <h2>Welcome to Your Memories 💌</h2>
+      <div id="image-gallery"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

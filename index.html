@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎉 Happy Birthday 🎂</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎂 Happy Birthday Surprise 🎉</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <!-- Birthday Message -->
-    <h1>🎉 Happy Birthday, My Love! 🎂</h1>
-    <p>Today is all about you ❤️</p>
+  <!-- Centered Section with Password -->
+  <div class="main-container">
+    <h1>🎂 Birthday Surprise for My Love! 🎉</h1>
     
     <!-- Password Section -->
-    <div class="login-section">
-      <input type="password" id="password" placeholder="Enter the password" />
-      <button onclick="checkPassword()">Unlock 💖</button>
+    <div class="password-section">
+      <input type="password" id="passwordInput" placeholder="Enter the password" />
+      <button onclick="validatePassword()">Enter 🎁</button>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-container">
+      <div class="countdown">
+        <p id="timer">Loading...</p>
+      </div>
     </div>
   </div>
 
   <script src="js/script.js"></script>
+  <script>
+    function validatePassword() {
+      const correctPassword = "12345"; // Set your desired password here
+      const userPassword = document.getElementById("passwordInput").value;
+
+      if (userPassword === correctPassword) {
+        alert("✅ Password Correct! Redirecting...");
+        window.location.href = "index2.html";
+      } else {
+        alert("❌ Incorrect Password. Please try again.");
+      }
+    }
+  </script>
 </body>
 </html>

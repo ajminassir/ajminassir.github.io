@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎂 Memories 🎉</title>
+  <title>🎂 Happy Birthday Memories 🎉</title>
   <link rel="stylesheet" href="css/style2.css" />
 </head>
 <body>
-  <div class="content-container">
-    <!-- Slideshow Container -->
-    <div class="slideshow-container">
-      <img id="slideshow" src="images/photo1.jpg" />
-    </div>
+  <!-- Light background animation effect -->
+  <div class="background-animation"></div>
 
-    <!-- Navigation Buttons -->
-    <div class="navigation">
-      <button onclick="prevImage()">Previous</button>
-      <button onclick="nextImage()">Next</button>
-    </div>
-
-    <!-- Background music -->
-    <audio autoplay loop>
-      <source src="music/birthday-song.mp3" type="audio/mp3" />
-    </audio>
+  <!-- Slideshow Container -->
+  <div class="slideshow-container">
+    <img id="slideshow" src="images/photo1.jpg" />
   </div>
 
+  <!-- Birthday message overlay -->
+  <div class="text-overlay">
+    <h1>🎉 Happy Birthday, My Love! 🎂</h1>
+    <p>Here's to the beautiful moments we've shared and many more to come. ❤️</p>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="navigation">
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- Background music that plays automatically -->
+  <audio autoplay loop>
+    <source src="music/birthday-song.mp3.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Import the script for logic -->
   <script src="js/script2.js"></script>
 </body>
 </html>

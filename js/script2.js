@@ -17,14 +17,15 @@ const images = [
 "images/memory15.jpg.jpg" ,
 ];
 
-let currentIndex = 0; // Track the current image index
+let currentIndex = 0;
 
+// Show the image at the given index
 function showImage(index) {
   const imageElement = document.getElementById('slideshow');
   if (index < 0) {
-    currentIndex = images.length - 1; // Loop back to the last image
+    currentIndex = images.length - 1;
   } else if (index >= images.length) {
-    currentIndex = 0; // Loop back to the first image
+    currentIndex = 0;
   } else {
     currentIndex = index;
   }

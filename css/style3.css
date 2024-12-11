@@ -42,4 +42,13 @@ body {
   button:hover {
     background: #0056b3;
   }
+/* Styling for the thank you photo */
+.thankyou-photo {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
   

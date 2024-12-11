@@ -50,5 +50,41 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* Responsive design for mobile and smaller devices */
+@media (max-width: 768px) {
+  .birthday-text h1 {
+    font-size: 2rem;
+  }
+
+  .birthday-text p {
+    font-size: 1rem;
+  }
+
+  .slideshow-container {
+    height: 50%;
+  }
+
+  .navigation button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .birthday-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .birthday-text p {
+    font-size: 0.9rem;
+  }
+
+  .slideshow-container {
+    height: 40%;
+  }
+
+  .navigation button {
+    padding: 6px 12px;
+  }
+}
 
   

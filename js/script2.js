@@ -21,11 +21,12 @@ let currentIndex = 0;
 
 // Show the image at the given index
 function showImage(index) {
-  const imageElement = document.getElementById('slideshow');
-  if (index < 0) {
-    currentIndex = images.length - 1;
-  } else if (index >= images.length) {
-    currentIndex = 0;
+  const imageElement = document.getElementById("slideshow");
+  if (index >= images.length) {
+    // Redirect to a new page after the last image
+    window.location.href = "index3.html";
+  } else if (index < 0) {
+    currentIndex = images.length - 1; // Go to the last image
   } else {
     currentIndex = index;
   }
